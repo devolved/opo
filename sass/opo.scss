@@ -1,0 +1,258 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+$bg: rgba(0, 0, 0, 0.6);
+$black: #fff;
+$color:rgb(21, 241, 241);
+$radius: 0.5rem;
+$font: "Open Sans", "Helvetica", "Arial", sans-serif;
+$green: #4cd137;
+$red: #e01f25;
+
+
+
+
+/* HTML5 display-role reset for older browsers */
+article,aside,div,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; box-sizing: border-box; }
+audio,canvas,iframe,img,svg,video { vertical-align: middle; }
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #000;
+    color: $black;
+    vertical-align: top;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    background: {
+        image: url(../gfx/bg.jpg);
+        position: center top;
+        repeat: no-repeat;
+        size: cover;
+        color: $black;
+    }    
+}
+
+*, *:before, *:after { box-sizing: inherit; }
+
+body {
+    font: {
+        size: 16px;
+        family: "Open Sans", Helvetica, sans-serif;
+    }
+    color: $black; 
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.2);   
+}
+
+a { 
+    color: #444;
+    border-bottom: 1px dotted #444;
+    text-decoration: none;
+
+    &:hover {
+        color: $black;
+        border-color: $color;
+        
+    }
+
+
+}
+h1 { font-size: 3em; margin-bottom: 3rem; color: $black; }
+
+h2, h3 {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none none;
+}
+
+li, p {
+    line-height: 1.25em;
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+
+    th { font-size: 1.2em; font-weight: 600; }
+
+    th, td {
+        padding: 0.5rem;
+    }
+
+    .total { font-weight: 600; font-size: 1.2em; }
+}
+
+// forms 
+
+form {
+    line-height: 2rem;
+
+    li { 
+        display: flex; 
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 1rem;
+    }
+}
+
+label {
+    flex: 0 0 100px;
+    line-height: 3em;
+}
+
+input[type="text"], select, textarea { 
+    flex: 2 1 0;
+    -webkit-appearance: none;
+    padding: 1em;
+    border: 0;
+    background: $bg;
+    color: $black;
+    border-radius: $radius; 
+    font-size: 1em; 
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 2px 2px $color;
+    }
+}
+
+textarea { resize: vertical; min-height: 6em; }
+
+input[type="submit"], input[type="checkbox"] {
+    flex: initial;
+    display: inline;
+    border-radius: $radius;    
+    cursor: pointer;    
+}
+
+button, input[type="submit"] {
+    -webkit-appearance: none;
+    padding: 1em;
+    border: 0;
+    background: $color;
+    color: #234;
+    border-radius: $radius;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bolder;
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 2px 2px $color;
+    }    
+}
+#confirm {
+    display: inline-block;
+    padding: 1em;
+    margin: 1em 0;
+    background: $red;
+    font: {
+        size: 1em;
+        weight: bolder
+    }
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+#confirm.reveal { opacity: 1; }
+// nav
+
+nav {
+
+    background: $bg;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    border-radius: $radius;
+
+    li {
+        display: inline;
+        margin-right: 1rem;
+    }
+
+    a { 
+        color: #fff;
+        border: 0;
+    
+        &:hover { color: $color; }
+    }
+
+}
+
+// boxes
+
+
+#main {
+    padding: 2rem;
+
+}
+
+.fwrap {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    & > div {
+        flex: 1 1 300px;
+        padding: 2rem;
+        margin: 0 2rem;
+        background: $bg;
+        border-radius: $radius;
+        margin-bottom: 2rem;
+        
+    }
+
+   .f2 { flex: 2 1 300px; } 
+}
+
+// misc
+
+.edit-link {
+    font-size: 14px;
+    float: right;
+}
+
+#counter {
+    font-size: 5em;
+    color: $color;
+    height: 100px;
+    line-height: 100px;
+
+}
+
+#toggle {
+    float: right;
+    background: $green;
+    border-radius: 100%;
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 1.4em;
+    padding: 0;
+    color: #fff;
+
+    &:focus { outline: none; box-shadow: none;  }
+
+    &.pause { background: $red; }
+    
+}
+
+.add-to {
+    margin-top: 2rem;
+}

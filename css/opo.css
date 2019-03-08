@@ -1,0 +1,347 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 20, ../sass/opo.scss */
+article, aside, div, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  box-sizing: border-box;
+}
+
+/* line 21, ../sass/opo.scss */
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+}
+
+/* line 23, ../sass/opo.scss */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #000;
+  color: #fff;
+  vertical-align: top;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  background-image: url(../gfx/bg.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+/* line 42, ../sass/opo.scss */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* line 44, ../sass/opo.scss */
+body {
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 53, ../sass/opo.scss */
+a {
+  color: #444;
+  border-bottom: 1px dotted #444;
+  text-decoration: none;
+}
+/* line 58, ../sass/opo.scss */
+a:hover {
+  color: #fff;
+  border-color: #15f1f1;
+}
+
+/* line 66, ../sass/opo.scss */
+h1 {
+  font-size: 3em;
+  margin-bottom: 3rem;
+  color: #fff;
+}
+
+/* line 68, ../sass/opo.scss */
+h2, h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* line 74, ../sass/opo.scss */
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none none;
+}
+
+/* line 80, ../sass/opo.scss */
+li, p {
+  line-height: 1.25em;
+  margin-bottom: 0.5rem;
+}
+
+/* line 85, ../sass/opo.scss */
+table {
+  width: 100%;
+}
+/* line 88, ../sass/opo.scss */
+table th {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+/* line 90, ../sass/opo.scss */
+table th, table td {
+  padding: 0.5rem;
+}
+/* line 94, ../sass/opo.scss */
+table .total {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+/* line 99, ../sass/opo.scss */
+form {
+  line-height: 2rem;
+}
+/* line 102, ../sass/opo.scss */
+form li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 1rem;
+}
+
+/* line 112, ../sass/opo.scss */
+label {
+  flex: 0 0 100px;
+  line-height: 3em;
+}
+
+/* line 117, ../sass/opo.scss */
+input[type="text"], select, textarea {
+  flex: 2 1 0;
+  -webkit-appearance: none;
+  padding: 1em;
+  border: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 0.5rem;
+  font-size: 1em;
+}
+/* line 127, ../sass/opo.scss */
+input[type="text"]:focus, select:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #15f1f1;
+}
+
+/* line 133, ../sass/opo.scss */
+textarea {
+  resize: vertical;
+  min-height: 6em;
+}
+
+/* line 135, ../sass/opo.scss */
+input[type="submit"], input[type="checkbox"] {
+  flex: initial;
+  display: inline;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* line 142, ../sass/opo.scss */
+button, input[type="submit"] {
+  -webkit-appearance: none;
+  padding: 1em;
+  border: 0;
+  background: #15f1f1;
+  color: #234;
+  border-radius: 0.5rem;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bolder;
+}
+/* line 153, ../sass/opo.scss */
+button:focus, input[type="submit"]:focus {
+  outline: none;
+  box-shadow: 0 0 2px 2px #15f1f1;
+}
+
+/* line 158, ../sass/opo.scss */
+#confirm {
+  display: inline-block;
+  padding: 1em;
+  margin: 1em 0;
+  background: #e01f25;
+  font-size: 1em;
+  font-weight: bolder;
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+/* line 171, ../sass/opo.scss */
+#confirm.reveal {
+  opacity: 1;
+}
+
+/* line 174, ../sass/opo.scss */
+nav {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+/* line 181, ../sass/opo.scss */
+nav li {
+  display: inline;
+  margin-right: 1rem;
+}
+/* line 186, ../sass/opo.scss */
+nav a {
+  color: #fff;
+  border: 0;
+}
+/* line 190, ../sass/opo.scss */
+nav a:hover {
+  color: #15f1f1;
+}
+
+/* line 198, ../sass/opo.scss */
+#main {
+  padding: 2rem;
+}
+
+/* line 203, ../sass/opo.scss */
+.fwrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+/* line 210, ../sass/opo.scss */
+.fwrap > div {
+  flex: 1 1 300px;
+  padding: 2rem;
+  margin: 0 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+/* line 220, ../sass/opo.scss */
+.fwrap .f2 {
+  flex: 2 1 300px;
+}
+
+/* line 225, ../sass/opo.scss */
+.edit-link {
+  font-size: 14px;
+  float: right;
+}
+
+/* line 230, ../sass/opo.scss */
+#counter {
+  font-size: 5em;
+  color: #15f1f1;
+  height: 100px;
+  line-height: 100px;
+}
+
+/* line 238, ../sass/opo.scss */
+#toggle {
+  float: right;
+  background: #4cd137;
+  border-radius: 100%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 0;
+  color: #fff;
+}
+/* line 250, ../sass/opo.scss */
+#toggle:focus {
+  outline: none;
+  box-shadow: none;
+}
+/* line 252, ../sass/opo.scss */
+#toggle.pause {
+  background: #e01f25;
+}
+
+/* line 256, ../sass/opo.scss */
+.add-to {
+  margin-top: 2rem;
+}
