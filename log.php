@@ -42,6 +42,7 @@
         <div class="add-to">
             <label for="rate">at </label>
             <select name ="rate" id="rate">
+                <option value="10">£10 per hour</option>
                 <option value="20">£20 per hour</option>
                 <option value="30">£30 per hour</option>
                 <option value="40">£40 per hour</option>
