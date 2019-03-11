@@ -4,7 +4,7 @@ require_once('../fpdf/fpdf.php');
 
 // get data
 
-$werdz = 'Would only do this in exchange for cash, not to prove a point';
+$werdz = 'Would only do this in exchange for cash, not to prove a point ... templating for this is soooooo boring';
 
 
 

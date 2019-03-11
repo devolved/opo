@@ -42,10 +42,15 @@ if(document.getElementById('toggle')){
             logger.time = Math.floor((logger.end - logger.start) / 1000);
             var totalseconds = logger.total + logger.time;
             // make prettier
+            if(totalseconds < 60) {
+                counter.innerHTML = totalseconds + " secs";
+            } else {
+                counter.innerHTML = Math.floor(totalseconds / 60) + " mins";
+            }
 
 
             //
-            counter.innerHTML = totalseconds;
+            
         },
         form: function() {
             var worked = ((logger.total / 60) / 60); //convert to hours 
