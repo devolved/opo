@@ -12,7 +12,7 @@
         <form method="post" action="./inc/add_cost.php" name="logForm">
         <ul>
             <li><input type="hidden" name="type" id="type" value="work">
-                <label for="amount">Amount</label> <input name="amount" type="text" id="amount" value=""></li>                
+                <label for="amount">Amount</label> <input name="amount" type="number" id="amount" value="" required></li>                
             <li><label for="project">Project:</label>
                 <select name="project" id="project" value="">
                     <?php 

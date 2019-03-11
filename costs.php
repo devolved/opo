@@ -15,7 +15,7 @@
                         <option value="domain">Domain name</option>
                         <option value="other">Other</option>
                     </select></li>
-                <li><label for="amount">Amount:</label> <input name="amount" type="text"></li>                
+                <li><label for="amount">Amount:</label> <input name="amount" type="number" required></li>                
                 <li><label for="project">Project:</label>
                     <select name="project" id="project">
                         <?php 

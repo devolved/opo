@@ -28,10 +28,10 @@
         <form method="post" action="./inc/add_company.php" name="companyForm">
             <ul>
                 <li><input type="hidden" name="ID" value="<?php echo $cID ?>">
-                <label for="name">Name:</label> <input name="name" type="text" value="<?php echo $fData['name'] ?>"></li>
-                <li><label for="rate">Rate:</label> <input name="rate" type="text" value="<?php echo $fData['rate'] ?>"></li>
-                <li><label for="phone">Phone:</label> <input name="phone" type="text" value="<?php echo $fData['phone'] ?>"></li>
-                <li><label for="email">Email:</label> <input name="email" type="text" value="<?php echo $fData['email'] ?>"></li>
+                <label for="name">Name:</label> <input name="name" type="text" value="<?php echo $fData['name'] ?>" required></li>
+                <li><label for="rate">Rate:</label> <input name="rate" type="number" value="<?php echo $fData['rate'] ?>" required></li>
+                <li><label for="phone">Phone:</label> <input name="phone" type="tel" value="<?php echo $fData['phone'] ?>" required></li>
+                <li><label for="email">Email:</label> <input name="email" type="email" value="<?php echo $fData['email'] ?>" required></li>
                 <li><input type="submit" name="submit" value="submit"></li>
             </ul>
         </form>

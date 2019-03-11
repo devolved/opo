@@ -45,7 +45,7 @@ if(document.getElementById('toggle')){
 
 
             //
-            counter.innerHTML = cabbage;
+            counter.innerHTML = totalseconds;
         },
         form: function() {
             var worked = ((logger.total / 60) / 60); //convert to hours 

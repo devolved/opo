@@ -33,11 +33,11 @@
         <form method="post" action="./inc/add_project.php" name="projectForm">
         <ul>
             <li><input type="hidden" name="ID" value="<?php echo $cID ?>">
-                <label for="name">Name:</label> <input name="name"  type="text" value="<?php echo $fData['name'] ?>"></li>
+                <label for="name">Name:</label> <input name="name"  type="text" value="<?php echo $fData['name'] ?>" required></li>
             <li><label for="company">Company:</label>
             <?php if (($_GET["id"])) {
                     $cID = htmlspecialchars($_GET["id"]);
-                    echo $fData['company'];
+                    echo '<input type="text" value="' . $fData['company'] . '" readonly';
                 } else {
                     echo '<select name="company" id="company">';
                 
@@ -56,14 +56,14 @@
             ?>
             </li>           
             <li><label for="type">Type:</label> 
-                <select name="type" id="type" value="<?php echo $fData['type'] ?>">
+                <select name="type" id="type" value="<?php echo $fData['type'] ?>" required>
                     <option value="website">Website</option>
                     <option value="psd">Design > html</option>
                     <option value="seo">SEO</option>
                     <option value="contract">Contract</option>
                     <option value="misc">Misc</option>
                 </select></li>
-            <li><label for="url">URL:</label> <input name="url" type="text" value="<?php echo $fData['url'] ?>"></li>
+            <li><label for="url">URL:</label> <input name="url" type="url" value="<?php echo $fData['url'] ?>" required pattern="https?://.+"></li>
             <li><label for="budget">Budget:</label> <input name="budget" type="text" value="<?php echo $fData['budget'] ?>"></li>
             <li><label for="hosting">Hosting:</label> 
                 <select name="hosting" id="hosting" value="<?php echo $fData['hosting'] ?>">

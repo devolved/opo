@@ -189,7 +189,7 @@ label {
 }
 
 /* line 117, ../sass/opo.scss */
-input[type="text"], select, textarea {
+input, select, textarea {
   flex: 2 1 0;
   -webkit-appearance: none;
   padding: 1em;
@@ -200,7 +200,7 @@ input[type="text"], select, textarea {
   font-size: 1em;
 }
 /* line 127, ../sass/opo.scss */
-input[type="text"]:focus, select:focus, textarea:focus {
+input:focus, select:focus, textarea:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #15f1f1;
 }
@@ -219,7 +219,17 @@ input[type="submit"], input[type="checkbox"] {
   cursor: pointer;
 }
 
+/* line 141, ../sass/opo.scss */
+input[type="checkbox"]:checked {
+  background: #15f1f1;
+}
+
 /* line 142, ../sass/opo.scss */
+input:read-only {
+  opacity: 0.5;
+}
+
+/* line 144, ../sass/opo.scss */
 button, input[type="submit"] {
   -webkit-appearance: none;
   padding: 1em;
@@ -232,13 +242,18 @@ button, input[type="submit"] {
   font-size: 1em;
   font-weight: bolder;
 }
-/* line 153, ../sass/opo.scss */
+/* line 155, ../sass/opo.scss */
 button:focus, input[type="submit"]:focus {
   outline: none;
   box-shadow: 0 0 2px 2px #15f1f1;
 }
 
-/* line 158, ../sass/opo.scss */
+/* line 161, ../sass/opo.scss */
+input:required:valid {
+  box-shadow: 0 0 2px 2px #4cd137;
+}
+
+/* line 164, ../sass/opo.scss */
 #confirm {
   display: inline-block;
   padding: 1em;
@@ -250,39 +265,39 @@ button:focus, input[type="submit"]:focus {
   transition: opacity 1s ease-in;
 }
 
-/* line 171, ../sass/opo.scss */
+/* line 177, ../sass/opo.scss */
 #confirm.reveal {
   opacity: 1;
 }
 
-/* line 174, ../sass/opo.scss */
+/* line 180, ../sass/opo.scss */
 nav {
   background: rgba(0, 0, 0, 0.6);
   padding: 1rem;
   margin-bottom: 2rem;
   border-radius: 0.5rem;
 }
-/* line 181, ../sass/opo.scss */
+/* line 187, ../sass/opo.scss */
 nav li {
   display: inline;
   margin-right: 1rem;
 }
-/* line 186, ../sass/opo.scss */
+/* line 192, ../sass/opo.scss */
 nav a {
   color: #fff;
   border: 0;
 }
-/* line 190, ../sass/opo.scss */
+/* line 196, ../sass/opo.scss */
 nav a:hover {
   color: #15f1f1;
 }
 
-/* line 198, ../sass/opo.scss */
+/* line 204, ../sass/opo.scss */
 #main {
   padding: 2rem;
 }
 
-/* line 203, ../sass/opo.scss */
+/* line 209, ../sass/opo.scss */
 .fwrap {
   display: flex;
   flex-direction: row;
@@ -290,7 +305,7 @@ nav a:hover {
   justify-content: space-between;
   align-items: stretch;
 }
-/* line 210, ../sass/opo.scss */
+/* line 216, ../sass/opo.scss */
 .fwrap > div {
   flex: 1 1 300px;
   padding: 2rem;
@@ -299,18 +314,18 @@ nav a:hover {
   border-radius: 0.5rem;
   margin-bottom: 2rem;
 }
-/* line 220, ../sass/opo.scss */
+/* line 226, ../sass/opo.scss */
 .fwrap .f2 {
   flex: 2 1 300px;
 }
 
-/* line 225, ../sass/opo.scss */
+/* line 231, ../sass/opo.scss */
 .edit-link {
   font-size: 14px;
   float: right;
 }
 
-/* line 230, ../sass/opo.scss */
+/* line 236, ../sass/opo.scss */
 #counter {
   font-size: 5em;
   color: #15f1f1;
@@ -318,7 +333,7 @@ nav a:hover {
   line-height: 100px;
 }
 
-/* line 238, ../sass/opo.scss */
+/* line 244, ../sass/opo.scss */
 #toggle {
   float: right;
   background: #4cd137;
@@ -331,17 +346,17 @@ nav a:hover {
   padding: 0;
   color: #fff;
 }
-/* line 250, ../sass/opo.scss */
+/* line 256, ../sass/opo.scss */
 #toggle:focus {
   outline: none;
   box-shadow: none;
 }
-/* line 252, ../sass/opo.scss */
+/* line 258, ../sass/opo.scss */
 #toggle.pause {
   background: #e01f25;
 }
 
-/* line 256, ../sass/opo.scss */
+/* line 262, ../sass/opo.scss */
 .add-to {
   margin-top: 2rem;
 }
