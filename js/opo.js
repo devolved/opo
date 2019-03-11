@@ -47,9 +47,6 @@ if(document.getElementById('toggle')){
             } else {
                 counter.innerHTML = Math.floor(totalseconds / 60) + " mins";
             }
-
-
-            //
             
         },
         form: function() {
@@ -90,7 +87,7 @@ if(document.getElementById('generate')){
         var req = new XMLHttpRequest();
 
             req.onreadystatechange = function() {
-            if (req.readyState == XMLHttpRequest.DONE) {   // XMLHttpRequest.DONE == 4
+            if (req.readyState == XMLHttpRequest.DONE) { 
                if (req.status == 200) {
                    document.getElementById("confirm").innerHTML = 'Not a real bill, dummy PDF dropped in app root';
                    document.getElementById("confirm").classList.add('reveal');

@@ -8,9 +8,9 @@ Front end is basic and not tested outside of Mac on Chrome. It should be fine th
 
 # To do
 
-- db creation script or make remote db with dummy data
+- noob proofing (conditional links, examples etc)
 - make dropdowns clear visually
-- make log more usable (currently spits out raw seconds)
+- make log nicer
 - paginate costs page
 - alt theme for ui
 - eye candy for ui
